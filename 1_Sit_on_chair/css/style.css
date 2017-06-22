@@ -1,0 +1,610 @@
+/* Warsztat 1 */
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  width: 100%;
+}
+.colorlighty {
+  color: #66CDAA;
+}
+/*------------- header all,menu ---------------*/
+
+.main_width {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.logo {
+  color: #ffffff;
+  padding-top: 10px;
+  padding-left: 80px;
+  padding-bottom: 5px;
+  align-items: center;
+  font-size: 15px;
+  width: 250px;
+}
+/*------------MENU--------------------*/
+ul {
+  list-style-type: none;
+}
+nav {
+  background: #000;
+  color: lightgrey;
+  margin-right: 0px;
+  width: 400px;
+}
+.menu_list li {
+  float: left;
+  position: relative;
+}
+.menu_list a {
+  color: #fff;
+  text-decoration: none;
+}
+.submenu_list {
+  display: none;
+  position: absolute;
+  left: 0;
+  background: #000;
+}
+.menu_list li:hover .submenu_list {
+  display: block;
+  margin-top: 10px;
+  overflow: visible;
+  width: 120px;
+}
+a:link {
+  color: #fff;
+  display: block;
+  padding: 13px 20px 10px ;
+  transition: .3s all linear;
+  width: 120px;
+
+}
+a:hover {
+  color: #000;
+  background: #fff;
+}
+.triangle {
+   width: 0;
+   height: 0;
+   border-left: 15px solid transparent;
+   border-right: 15px solid transparent;
+   border-bottom: 15px solid black;
+   margin-left: 45px;
+   margin-top: -8px;
+ }
+/*--------------------------Main----------------------------------*/
+/*---------------- Section 1, black_chair ------------------------*/
+/*left,right buttons*/
+.box_slide{
+  height: 450px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid white;
+  -webkit-box-shadow: inset -7px -190px 113px -144px rgba(158,155,158,1);
+
+}
+.leftscob {
+  background-color: white;
+  border: 1px solid transparent;
+  font-size: 70px;
+  color: #66CDAA;
+  height: 30px;
+  width: 20px;
+  margin-top: 130px;
+  margin-left: 15px;
+}
+.leftscob a {
+  color : #66CDAA;
+  text-decoration: none;
+}
+.leftscob a:hover {
+  color: black;
+}
+.rightscob {
+  background-color: white;
+  border: 1px solid transparent;
+  font-size: 70px;
+  color: #66CDAA;
+  height: 40px;
+  width: 30px;
+  margin-top: 130px;
+  margin-right: 105px;
+}
+.rightscob a {
+color: #66CDAA;
+  text-decoration: none;
+}
+.rightscob a:hover {
+  color: black;
+}
+/*img black_chair*/
+.black_chair {
+  background-image: url('../images/black_chair.png');
+  background-repeat: no-repeat;
+  background-position: 10% 55%;
+  text-align: center;
+  width: 90%
+
+}
+.chairText {
+  margin-top: 75px;
+  margin-left: 290px;
+  font-size: 14px;
+}
+.black_chair h1 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 2.5;
+}
+.btn {
+  background-color: #66CDAA;
+  width: 240px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 26px;
+  color: #ffffff;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #000000;
+  margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
+ }
+.btn[type=button]:hover {
+  background: #11610d;
+  background: -webkit-linear-gradient(top, #11610d, #0bdf00);
+  background: -moz-linear-gradient(top, #11610d, #0bdf00);
+  background: -o-linear-gradient(top, #11610d, #0bdf00);
+  background: -ms-linear-gradient(top, #11610d, #0bdf00);
+  background: linear-gradient(top, #11610d, #0bdf00);
+ }
+/*---------------- Section 2 - pic 1,2,border_text ----------------------*/
+
+.smaller_width {
+  margin-left: 9%;
+  margin-right: 8%;
+}
+/* ----Pictures section ------*/
+.chairs_pictures {
+  height: 290px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+ }
+/* ----left pic------ */
+.left_column_pic1 {
+  width: 370px;
+  height: 230px;
+  background-image: url("../images/box1_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+ }
+.left_column_inside_container {
+  width: 370px;
+  height: 60px;
+  background-color: rgba(245, 242, 241, 0.6);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+ }
+.left_inside_column_text {
+  width: 140px;
+  height: 25px;
+  border-bottom: 5px solid #66CDAA;
+  margin-bottom: 25px;
+  margin-left: 15px;
+ }
+
+.left_inside_column_text_p {
+  font-size: 15px;
+  font-weight: 900;
+  text-align: left;
+ }
+/* mid box */
+.mid_column_pic2 {
+  width: 370px;
+  height: 230px;
+  background-image: url("../images/box2_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 30px;
+ }
+.mid_column_inside_container {
+  width: 370px;
+  height: 60px;
+  background-color: rgba(245, 242, 241, 0.6);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+ }
+.mid_inside_column_text {
+  width: 140px;
+  height: 25px;
+  border-bottom: 5px solid #66CDAA;
+  margin-bottom: 25px;
+  margin-left: 15px;
+ }
+.mid_inside_column_text_p {
+  font-size: 16px;
+  text-align: left;
+ }
+.textinfopic {
+  text-align: left;
+  border: 2px solid #DCDCDC;
+  width: 365px;
+  height: 250px;
+  float: right;
+  margin-left: 30px;
+}
+.textinfopic h1 {
+  border-bottom: 5px solid #66CDAA;
+  width: 210px;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.textinfopic p {
+  margin-left: 20px;
+  margin-top: 20px;
+  color: grey;
+}
+/*------------- Section 3 - Price list ---------------*/
+.pricelist {
+  width: 100%;
+  height: 700px;
+  margin-top: 30px;
+  background-color: #DCDCDC;
+}
+.pricelist h1 {
+  border-bottom: 5px solid #66CDAA;
+  width: 365px;
+  color: #778899;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 9%;
+  margin-top: 20px;
+}
+.box {
+  background-color: #F8F8FF;
+ 	width: 370px;
+  height: 520px;
+ 	border: 3px solid silver;
+ 	position: relative;
+ 	padding: 25px 0px 10px 0px;
+  margin-top: 65px;
+  margin-right: 36px;
+
+  display: inline-table;
+}
+.colornew {
+  background-color: #66CDAA;
+  border: 2px solid #66CDAA;
+}
+.margin {
+  margin-left: 9%;
+}
+.circle {
+ 	position: absolute;
+ 	background-color: silver;
+ 	height: 40px;
+ 	width: 40px;
+ 	border: 8px solid white;
+ 	box-shadow: 0 0 0 4px silver;
+ 	border-radius: 100%;
+ 	top: -28px;
+ 	left: calc(50% - 25px);
+}
+.special {
+  background-color: white;
+  border: 8px solid #66CDAA;
+  box-shadow: 0 0 0 4px #66CDAA;
+  }
+.box h2 {
+  font-size: 1.5em;
+  text-align: center;
+  color: #66CDAA;
+ 	font-weight: 900;
+}
+.box h2:hover{
+  color: black;
+  cursor:default;
+}
+.box div:hover{
+  color: black;
+  cursor:default;
+}
+/* Ceny */
+.textAboutPln{
+  text-align: center;
+  border: 3px solid silver;
+  background-color: white;
+  color: silver;
+  height: 125px;
+  width: 125px;
+  border-radius: 100%;
+  margin-top: 25px;
+  margin-left: 112px;
+}
+
+.textAboutPlnSpecial {
+  text-align: center;
+  border: 3px solid #66CDAA;
+  background-color: white;
+  color: #66CDAA;
+  height: 125px;
+  width: 125px;
+  border-radius: 100%;
+  margin-top: 25px;
+  margin-left: 112px;
+}
+.numerOne {
+  font-weight: 700;
+  font-size: 2.6em;
+  z-index: 1;
+  position: relative;
+  top: 25px;
+  left: -3px;
+}
+.numerOneMiddle{
+  font-weight: 700;
+  font-size: 2.6em;
+  z-index: 1;
+  position: relative;
+  top: 25px;
+  left: -3px;
+}
+.numerTwo {
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: -28px;
+  margin-left: 57px;
+  z-index: 2;
+}
+.numerTwoMiddle{
+  font-weight: 700;
+  font-size: 1em;
+  margin-top: -28px;
+  margin-left: 57px;
+  z-index: 2;
+}
+.plnMth {
+  font-weight: bolder;
+  font-size: 1em;
+  margin-top: 35px;
+}
+.plnMthMiddle {
+  font-weight: bolder;
+  font-size: 1em;
+  margin-top: 35px;
+}
+.colornew h2 {
+  color: white;
+}
+/* Tablica */
+.tablicaA {
+  font-size: 1.4em;
+  color: silver;
+  text-align: center;
+  width: 364px;
+  height: 70px;
+  margin-top: 80px;
+  margin-left: -115px;
+  line-height: 2;
+}
+.tablicaA tr:nth-child(2n){
+  background-color: #f5f5f5;
+}
+.tablicaA tr:nth-child(2n+1){
+  background-color:#DaDaDa;
+}
+ .tablicaA tr:hover{
+  color:black;
+  cursor:default;
+}
+ .tablicaB {
+  font-size: 1.4em;
+  color: silver;
+  text-align: center;
+  width: 364px;
+  height: 145px;
+  margin-top: 80px;
+  margin-left: -115px;
+  line-height: 2;
+}
+.tablicaB tr:nth-child(2n){
+   background-color: #f5f5f5;
+ }
+.tablicaB tr:nth-child(2n+1){
+  background-color:#DaDaDa;
+}
+.tablicaB tr:hover{
+  color:black;
+  cursor:default;
+}
+.tablicaC {
+  font-size: 1.4em;
+  color: silver;
+  text-align: center;
+  width: 364px;
+  height: 145px;
+  margin-top: 80px;
+  margin-left: -115px;
+  line-height: 2;
+}
+.tablicaC tr:nth-child(2n){
+  background-color: #D3D3D3;
+}
+.tablicaC tr:nth-child(2n+1){
+  background-color: white;
+}
+.tablicaC tr:hover{
+  color: black;
+  cursor:default;
+}
+/* przycisk bottom */
+.prz {
+  margin-top: 255px;
+  margin-left: 123px;
+  font-size: 1em;
+ 	color: white;
+ 	background-color: #66CDAA;
+ 	border: 1px solid #66CDAA;
+ 	height: 28px;
+  width: 110px;
+  border-radius: 6px;
+  font-weight: 100;
+}
+.prz[type=button]:hover {
+  background: #11610d;
+  background: -webkit-linear-gradient(top, #11610d, #0bdf00);
+  background: -moz-linear-gradient(top, #11610d, #0bdf00);
+  background: -o-linear-gradient(top, #11610d, #0bdf00);
+  background: -ms-linear-gradient(top, #11610d, #0bdf00);
+  background: linear-gradient(top, #11610d, #0bdf00);
+}
+.onemoretime {
+  color: #66CDAA;
+  background-color: white;
+  border: 1px solid white;
+}
+/*----------------------------Section 4 -------------------------*/
+/*----------Formularz,pic,button-bottom------------------------*/
+.formulare {
+  width: 100%;
+  height: 570px;
+}
+.formulare h1 {
+  border-bottom: 5px solid #66CDAA;
+  width: 365px;
+  color: #778899;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 9%;
+  margin-top: 20px;
+}
+fieldset {
+  margin-top: 35px;
+  margin-left: 9%;
+  font-size: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+input::placeholder{
+  font-family: 'Raleway', sans-serif;
+  color:lightgrey;
+  font-weight: 100;
+}
+input {
+  margin-top: 15px;
+  padding: 7px 360px 7px 10px;
+  border: 1px solid #87ceeb;
+}
+:focus::-webkit-input-placeholder {
+  color: transparent
+}
+:focus::-moz-placeholder {
+  color: transparent
+}
+#form_username {
+  display: block;
+}
+#form_email {
+  display: block;
+}
+#form_user_description {
+  display: block;
+}
+textarea {
+  resize: none;
+  margin-top: 15px;
+  padding: 10px 360px 120px 10px;
+  border: 1px solid #87ceeb;
+}
+textarea::placeholder{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  color:lightgrey;
+}
+input[type=submit] {
+  float: right;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  padding:inherit;
+  background-color: #66CDAA;
+  border: 1px solid #66CDAA;
+  height: 55px;
+  width: 333px;
+  border-radius: 6px;
+  font-weight: 100;
+  margin-right: 185px;
+  margin-top: -55px;
+}
+input[type=submit]:hover {
+  background: #11610d;
+  background: -webkit-linear-gradient(top, #11610d, #0bdf00);
+  background: -moz-linear-gradient(top, #11610d, #0bdf00);
+  background: -o-linear-gradient(top, #11610d, #0bdf00);
+  background: -ms-linear-gradient(top, #11610d, #0bdf00);
+  background: linear-gradient(top, #11610d, #0bdf00);
+}
+/* ------- Red Chair--------*/
+.red_chair{
+  float: right;
+  position: relative;
+  bottom: 64%;
+  right: 16%;
+}
+.form_ok{
+  float: right;
+  position: relative;
+  bottom: 25%;
+  right: -2.8%;
+}
+.pic4{
+  border: 2px solid white;
+  box-shadow: 0px 0px 0px 1px lightgrey;
+}
+.form_ok p {
+  color: lightgrey;
+  float: right;
+  padding: 10px 0px 0px 13px;
+}
+/*-------------Footer--------------------------------*/
+footer{
+  width: 100%;
+  height: 50px;
+  color: lightgrey;
+  font-size: 1em;
+  margin-left: 9%;
+  margin-right: 5%;
+}
+.theEnd {
+  display: flex;
+  justify-content: space-between;
+}
+.share_buttons{
+  margin-right: -39%;
+  margin-top: 1%;
+}
+.share_buttons a {
+  display: inline-block;
+  cursor: pointer;
+  margin: -40px;
+}
+.coloranother {
+  color: grey;
+  font-weight: bold;
+}
+.logoEnd {
+  font-size: 20px;
+  margin-right: -100px;
+}
